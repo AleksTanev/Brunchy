@@ -1,0 +1,16 @@
+.foodItemsContainer {
+    display: flex;
+    white-space: nowrap;
+    margin-left: 140px;
+    padding-top: 40px;
+    overflow-x: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none;    /* For Internet Explorer 10+ */
+    -webkit-overflow-scrolling: touch; /* For smooth scrolling on touch devices */
+
+}
+
+.foodItemsContainer::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
