@@ -5,21 +5,13 @@
     --font-color-secondary: #797979;
     --orange-primary: #FF8515;
     --white-primary: #FFFFFF;
+    --tablet-width: 830px;
 }
 
 body {
     font-family: Poppins, sans-serif;
     font-weight: 600;
     font-size: 14;
-    margin-left: 140px;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 2rem;
-    height: 55px;
 }
 
 a {
