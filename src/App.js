@@ -1,7 +1,8 @@
+import Navbar from "./components/navbar/navbar";
 function App() {
     return (
         <div>
-            <header>Brunchy</header>
+            <Navbar />
         </div>
     );
 }
