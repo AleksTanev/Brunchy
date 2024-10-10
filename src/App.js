@@ -1,9 +1,11 @@
+import HeroText from "./components/heroText/heroText";
 import Navbar from "./components/navbar/navbar";
 function App() {
     return (
-        <div>
+        <>
             <Navbar />
-        </div>
+            <HeroText />
+        </>
     );
 }
 
