@@ -1,0 +1,48 @@
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 70px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 341px;
+    color: var(--font-color-secondary);
+}
+
+.pillBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    color: #F17C0F;
+    background-color: #FFE5CD;
+    height: 37px; 
+    width: 170px;
+    border-radius: 50px;
+    font-size: 13px;
+}
+
+.pillBoxImageContainer {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white-primary);
+}
+
+.pillBoxImage {
+    width: 65%; 
+    height: 65%;
+}
