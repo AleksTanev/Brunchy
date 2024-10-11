@@ -6,7 +6,7 @@ function SuccessModal({ handleCloseModal }) {
         <Modal handleCloseModal={handleCloseModal}>
             <p className={`highlight ${styles.messageHeader}`}>Congratulations!</p>
             <p className={styles.secondaryText}>Your order is on its way</p>
-            <button className="primaryButton" onClick={handleCloseModal}>
+            <button className="primary-button" onClick={handleCloseModal}>
                 Ok
             </button>
         </Modal>

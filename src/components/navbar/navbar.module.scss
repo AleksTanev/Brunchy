@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     align-items: center;
-    margin-right: 70px;
+    margin-right: var(--margin-default);
     height: 55px;
 }
 
@@ -15,7 +15,7 @@
 .navLinks {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 341px;
     color: var(--font-color-secondary);
 }
@@ -51,4 +51,15 @@
 .navbarContainer {
     margin-left: var(--margin-default);
     margin-top: 36px;
+}
+
+
+@media (max-width: 431px) {
+
+    .navLinks {
+        max-width: 47%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 50px;
+    }
 }

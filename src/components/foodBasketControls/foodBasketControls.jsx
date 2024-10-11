@@ -3,7 +3,6 @@ import ShoppingBasketIcon from "../shoppingBasketIcon/shoppingBasketIcon";
 import styles from "./foodBasketControls.module.scss";
 import BasketContext from "../../store/BasketContext";
 import { ICON_TYPE } from "../shoppingBasketIcon/constants";
-import Modal from "../modal/modal";
 import FoodBasketModal from "../foodBasketModal/foodBasketModal";
 import SuccessModal from "../successModal/successModal";
 
@@ -26,13 +25,13 @@ function FoodBasketControls() {
     return (
         <>
             {isBasketModalOpen && <FoodBasketModal handleCloseModal={() => setIsBasketModalOpen(false)} />}
-            {isSuccessModalOpen && <SuccessModal renderModalContent={<h1>Order has been placed!</h1>} handleCloseModal={() => setIsSuccessModalOpen(false)} />}
+            {isSuccessModalOpen && <SuccessModal handleCloseModal={() => setIsSuccessModalOpen(false)} />}
             <div className={styles.controlsWrapper}>
                 <div className={styles.controlsContainer} style={{ zIndex: isBasketModalOpen ? 100 : 0 }}>
                     <div className={styles.controlsContent}>
                         <ShoppingBasketIcon handleClick={() => setIsBasketModalOpen(true)} type={ICON_TYPE.SHOW_BASKET} />
                         <span className={styles.basketPrice}>{totalBasketPrice.toFixed(2)}$</span>
-                        <button className="primaryButton" onClick={handleOrderNowClick}>
+                        <button className="primary-button" onClick={handleOrderNowClick}>
                             Order Now
                         </button>
                     </div>

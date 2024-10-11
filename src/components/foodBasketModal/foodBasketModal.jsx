@@ -2,6 +2,7 @@ import { useContext } from "react";
 import BasketContext from "../../store/BasketContext";
 import Modal from "../modal/modal";
 import FoodBasketEntry from "../foodBasketEntry/foodBasketEntry";
+import styles from "./foodBasketModal.module.scss";
 
 function FoodBasketModal({ handleCloseModal }) {
     const basketCtx = useContext(BasketContext);
@@ -19,6 +20,7 @@ function FoodBasketModal({ handleCloseModal }) {
             ) : (
                 <p>No items in the basket</p>
             )}
+            <hr className={styles.line} />
             <FoodBasketEntry name="Total" amount={basketTotalPrice} />
         </Modal>
     );

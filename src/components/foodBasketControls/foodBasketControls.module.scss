@@ -24,4 +24,8 @@
     padding-right: 1em;
 }
 
-
+@media (max-width: 831px) {
+    .controlsWrapper {
+        margin-top: 170px;
+    }
+}
