@@ -1,0 +1,27 @@
+.controlsWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 81px;
+    margin-top: 3rem;
+}
+
+.controlsContainer {
+    width: 100%;
+    max-width: 476px;
+    padding: 14px 16px;
+    margin-left: var(--margin-default);
+    margin-right: var(--margin-default);
+    background-color: var(--background-secondary);
+    border-radius: 15px;
+}
+
+.controlsContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+

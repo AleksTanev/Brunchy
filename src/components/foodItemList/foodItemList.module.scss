@@ -1,7 +1,7 @@
 .foodItemsContainer {
     display: flex;
     white-space: nowrap;
-    margin-left: 140px;
+    margin-left: var(--margin-default);
     padding-top: 30px;
     overflow-x: scroll;
     scrollbar-width: none; /* For Firefox */
