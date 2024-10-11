@@ -2,13 +2,13 @@
     background-color: var(--background-secondary);
     flex: 0 0 auto;
     margin-right: 3em;
-    height: 303px;
-    width: 273px;
+    height: 270px;
+    width: 229px;
     border-radius: 30px;
 }
 
 .imageContainer {
-    height: 50%;
+    height: 45%;
     position: relative;
     overflow: visible
 }
@@ -57,6 +57,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     background-color: var(--background-primary);
 }
 
