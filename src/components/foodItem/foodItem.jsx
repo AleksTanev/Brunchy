@@ -1,7 +1,8 @@
 import styles from "./foodItem.module.scss";
-import icon from "../../assets/shopping-basket.png";
 import { useContext } from "react";
 import BasketContext from "../../store/BasketContext";
+import ShoppingBasketIcon from "../shoppingBasketIcon/shoppingBasketIcon";
+import { ICON_TYPE } from "../shoppingBasketIcon/constants";
 
 function FoodItem({ item }) {
     const basketCtx = useContext(BasketContext);
@@ -19,13 +20,11 @@ function FoodItem({ item }) {
                 <p className={`${styles.itemHeader} ${styles.descriptionText}`}>{item.name}</p>
                 <p className={`${styles.itemCaption} ${styles.descriptionText}`}>{item.caption}</p>
                 <p className={styles.descriptionText}>
-                    <span className={styles.highlight}>$</span>
+                    <span className="highlight">$</span>
                     {" " + item.price.toFixed(2)}
                 </p>
             </div>
-            <div className={styles.iconContainer} onClick={handleAddFoodItemToBasket}>
-                <img className={styles.iconImage} src={icon} alt="Add to shopping basket icon" />
-            </div>
+            <ShoppingBasketIcon handleClick={handleAddFoodItemToBasket} type={ICON_TYPE.ADD_TO_BASKET} />
         </div>
     );
 }

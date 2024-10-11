@@ -1,3 +1,4 @@
+import FoodBasketControls from "./components/foodBasketControls/foodBasketControls";
 import FoodItemList from "./components/foodItemList/foodItemList";
 import HeroText from "./components/heroText/heroText";
 import Navbar from "./components/navbar/navbar";
@@ -9,6 +10,7 @@ function App() {
             <Navbar />
             <HeroText />
             <FoodItemList />
+            <FoodBasketControls />
         </BasketContextProvider>
     );
 }
