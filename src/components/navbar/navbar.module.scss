@@ -40,10 +40,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white-primary);
+    background-color: var(--background-primary);
 }
 
 .pillBoxImage {
     width: 65%; 
     height: 65%;
+}
+
+.navbarContainer {
+    margin-left: 140px;
+    margin-top: 36px;
 }
