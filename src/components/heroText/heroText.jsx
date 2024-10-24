@@ -7,7 +7,7 @@ function HeroText() {
                 The fastest <br className={styles.lineBreak} />
                 brunch <br className={styles.lineBreak} />
                 delivery in <br className={styles.lineBreak} />
-                <span className={`${styles.highlight}`}>Your city</span>
+                <span className="highlight">Your city</span>
             </h1>
             <p className={styles.description}>
                 This is my Exploration for Fruit - Food Delivery Landing Page 🍕.&nbsp;

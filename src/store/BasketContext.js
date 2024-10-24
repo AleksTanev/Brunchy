@@ -3,6 +3,7 @@ import { createContext, useReducer } from "react";
 const BasketContext = createContext({
     items: [],
     addItem: (item) => {},
+    orderItems: () => {},
 });
 
 function basketReducer(state, action) {
@@ -20,12 +21,21 @@ function basketReducer(state, action) {
 
             updatedItems[existingItemIndex] = updatedItem;
         } else {
-            updatedItems.push(action.item);
+            updatedItems.push({
+                ...action.item,
+                quantity: 1,
+            });
         }
 
         return {
             ...state,
             items: updatedItems,
+        };
+    }
+
+    if (action.type === "ORDER_ITEMS") {
+        return {
+            items: [],
         };
     }
 }
@@ -36,10 +46,15 @@ export function BasketContextProvider({ children }) {
     const basketContext = {
         items: basketState.items,
         addItem,
+        orderItems,
     };
 
     function addItem(item) {
         dispatchBasketAction({ type: "ADD_ITEM", item: item });
+    }
+
+    function orderItems(item) {
+        dispatchBasketAction({ type: "ORDER_ITEMS" });
     }
 
     return <BasketContext.Provider value={basketContext}> {children} </BasketContext.Provider>;
