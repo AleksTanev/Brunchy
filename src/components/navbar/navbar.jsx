@@ -6,8 +6,12 @@ function Navbar() {
         <header className={styles.navbarContainer}>
             <div className={styles.title}>BRUNCHY</div>
             <nav className={styles.navLinks}>
-                <a href="https://dreamshot.bg/">About</a>
-                <a href="https://dreamshot.bg/">Call Us</a>
+                <div className={styles.linkButton} onClick={() => console.log("About")}>
+                    About
+                </div>
+                <div className={styles.linkButton} onClick={() => console.log("Call us")}>
+                    Call Us
+                </div>
                 <div className={styles.pillBox}>
                     <div>Free Delivery</div>
                     <div className={styles.pillBoxImageContainer}>
